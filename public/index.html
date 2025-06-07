@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rotator Image App</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <h1>Hello, my name is Akwasi Kusi-Appiah</h1>
+        <div class="image-container">
+            <img id="rotatingImage" src="images/dawn country side.png" alt="Rotating Scenes">
+            <span>The current image showing is: "<span id="imageDescription">dawn country side</span>"</span>
+        </div>
+        <p class="github-link"><a href="https://github.com/akusi-appiah/wk3-beanstalk-app">Please Check out my Github</a></p>
+
+        <script>
+            const images = ['dawn country side.png', 'forest resort.png', 'natural mountaneous scene.png', 'river side view.png', 'rocky sea view.png'];
+            const descriptions = ['dawn country side', 'forest resort', 'natural mountaneous scene', 'river side view', 'rocky sea view'];
+            let index = 0;
+            setInterval(() => {
+            index = (index + 1) % images.length;
+                 document.getElementById('rotatingImage').src = `images/${images[index]}`;
+                 document.getElementById('imageDescription').textContent = descriptions[index];
+            }, 3000);
+        </script>
+    </body>
+</html:lang>
