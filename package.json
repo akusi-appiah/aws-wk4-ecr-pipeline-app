@@ -8,5 +8,8 @@
   "keywords": [],
   "author": "Akwasi Kusi-Appiah",
   "license": "ISC",
-  "description": "a simple app to create docker image and push to Amazon ECR"
+  "description": "a simple app to create docker image and push to Amazon ECR",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
